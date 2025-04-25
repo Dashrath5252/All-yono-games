@@ -40,24 +40,27 @@
       text-align: center;
       padding: 20px 10px;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .header span {
-      display: block;
+    .header .line1, .header .line2, .header .line3 {
       color: #ffe600; /* Yellow */
       text-shadow: 2px 2px 5px black, 0 0 25px yellow, 0 0 5px darkgoldenrod;
+      margin: 0;
     }
 
     .header .line1 {
-      text-align: left;
+      margin-bottom: -20px;
     }
 
     .header .line2 {
-      text-align: center;
+      margin-bottom: 10px;
     }
 
     .header .line3 {
-      text-align: right;
+      margin-top: -10px;
     }
 
     .notice-bar {
@@ -225,9 +228,11 @@
 <body>
 
   <div class="header">
-    <span class="line1">ALL</span>
-    <span class="line2">YONO</span>
-    <span class="line3">GAMES</span>
+    <div style="display: flex; justify-content: space-between; width: 100%; text-align: center;">
+      <span class="line1">ALL</span>
+      <span class="line2">YONO</span>
+      <span class="line3">GAMES</span>
+    </div>
   </div>
 
   <div class="notice-bar">
