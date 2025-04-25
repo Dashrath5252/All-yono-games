@@ -28,41 +28,36 @@
     }
 
     body {
+      background-color: #28a745;
       font-family: 'Arial', sans-serif;
-      background-color: #28a745; /* Green background */
       color: white;
     }
 
     .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       font-family: 'Archivo Black', sans-serif;
       font-size: 4em;
       font-weight: bold;
-      letter-spacing: 5px;
-      background: linear-gradient(to right, #ffe600, #f0ad4e); /* Yellow texture effect */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Black shadow */
-    }
-
-    .header .left, .header .center, .header .right {
-      flex: 1;
       text-align: center;
-    }
-
-    .header .left {
-      text-align: left;
-    }
-
-    .header .right {
-      text-align: right;
+      padding: 20px 10px;
+      color: white;
     }
 
     .header span {
       display: block;
-      line-height: 1.5;
+      color: #ffe600; /* Yellow */
+      text-shadow: 2px 2px 5px black, 0 0 25px yellow, 0 0 5px darkgoldenrod;
+    }
+
+    .header .line1 {
+      text-align: left;
+    }
+
+    .header .line2 {
+      text-align: center;
+    }
+
+    .header .line3 {
+      text-align: right;
     }
 
     .notice-bar {
@@ -230,9 +225,9 @@
 <body>
 
   <div class="header">
-    <div class="left"><span>ALL</span></div>
-    <div class="center"><span>YONO</span></div>
-    <div class="right"><span>GAMES</span></div>
+    <span class="line1">ALL</span>
+    <span class="line2">YONO</span>
+    <span class="line3">GAMES</span>
   </div>
 
   <div class="notice-bar">
