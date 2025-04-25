@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="YONO GAMES offers the best gaming apps with amazing bonuses. Download your favorite games and earn rewards today!" />
+  <meta name="keywords" content="YONO Games, gaming apps, Spin Crush, YONO Rummy, Jaiho Spin, Bingo, YONO Arcade, bonuses, download games, mobile gaming" />
+  <meta name="author" content="YONO GAMES" />
+  <meta property="og:title" content="YONO GAMES" />
+  <meta property="og:description" content="Join YONO GAMES now to get the best gaming apps with incredible bonuses! Download now and start playing!" />
+  <meta property="og:image" content="path-to-your-image.jpg" />
+  <meta property="og:url" content="https://your-website-url.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="YONO GAMES" />
+  <meta name="twitter:description" content="Join YONO GAMES now to get the best gaming apps with incredible bonuses! Download now and start playing!" />
+  <meta name="twitter:image" content="path-to-your-image.jpg" />
+
+  <title>ALL YONO GAMES</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #28a745;
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+
+    .header {
+      color: black; /* Set text color to black */
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 4em; /* Larger font size */
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 5px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Blackish shadow effect */
+    }
+
+    .header span {
+      display: block; /* Makes each word appear on a new line */
+      line-height: 1.5;
+    }
+
+    .notice-bar {
+      background-color: black;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .notice-bar span {
+      display: inline-block;
+      padding: 10px 0;
+      font-size: 1.1em;
+      color: #ffe600;
+      font-weight: bold;
+      text-align: center;
+      animation: scrollRightToLeft 20s linear infinite;
+      font-family: 'Luckiest Guy', cursive;
+    }
+
+    .app-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 10px;
+    }
+
+    .app {
+      background-color: #004d00;
+      border-radius: 15px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      border: 2px solid #ffe600;
+      flex-wrap: wrap;
+    }
+
+    .app img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #fff;
+    }
+
+    .app-info {
+      flex: 1;
+      padding: 0 10px;
+      font-size: 0.9em;
+      min-width: 120px;
+    }
+
+    .app-info strong {
+      font-size: 1em;
+      display: block;
+      color: #ffe600;
+    }
+
+    .download {
+      background-color: #ffdd57;
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 0.85em;
+      transition: 0.3s ease;
+      margin-top: 5px;
+    }
+
+    .download:hover {
+      background-color: #ffd000;
+      transform: scale(1.05);
+    }
+
+    .gallery {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 30%;
+      max-width: 120px;
+      height: auto;
+      border-radius: 10px;
+      filter: blur(5px);
+      transition: filter 1s ease-in-out;
+    }
+
+    .gallery img.unblur {
+      filter: blur(0);
+    }
+
+    .disclaimer-bar {
+      background-color: black;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: 20px;
+    }
+
+    .disclaimer-bar span {
+      display: inline-block;
+      padding: 10px 0;
+      font-size: 0.85em;
+      color: #ffe600;
+      font-weight: bold;
+      animation: scrollRightToLeft 18s linear infinite;
+    }
+
+    @keyframes scrollRightToLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @keyframes unblurCycle {
+      0%, 30% { filter: blur(0); }
+      33%, 100% { filter: blur(5px); }
+    }
+
+    .gallery img:nth-child(1) {
+      animation: unblurCycle 9s infinite;
+      animation-delay: 0s;
+    }
+
+    .gallery img:nth-child(2) {
+      animation: unblurCycle 9s infinite;
+      animation-delay: 3s;
+    }
+
+    .gallery img:nth-child(3) {
+      animation: unblurCycle 9s infinite;
+      animation-delay: 6s;
+    }
+
+    @media (max-width: 500px) {
+      .header {
+        font-size: 2em;
+      }
+
+      .gallery img {
+        width: 30%;
+      }
+
+      .app-info {
+        font-size: 0.8em;
+      }
+
+      .download {
+        font-size: 0.75em;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <span>ALL</span>
+    <span>YONO</span>
+    <span>GAMES</span>
+  </div>
+
+  <div class="notice-bar">
+    <span>Join now and get instant bonus up to ₹40 on registration!</span>
+  </div>
+
+  <div class="app-container">
+    <div class="app">
+      <img src="spin_crush.jpg" alt="Spin Crush">
+      <div class="app-info">
+        <strong>SPIN CRUSH</strong>
+        10M+ | Bonus ₹40
+      </div>
+      <a class="download" href="https://2shisgjsqawwhsagui7c.Safelyearnmillionsbysharingonepersonaqfxzqyfw.com?code=ADE7X99JX92&t=1745498414">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="yono_rummy.jpg" alt="YONO RUMMY">
+      <div class="app-info">
+        <strong>YONO RUMMY</strong>
+        10M+ | Bonus ₹30
+      </div>
+      <a class="download" href="https://yonorummyg.com?code=TQJPFHAM2TH&t=1745498673">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="jaiho_spin.jpg" alt="JAIHO SPIN">
+      <div class="app-info">
+        <strong>JAIHO SPIN</strong>
+        10M+ | Bonus ₹25
+      </div>
+      <a class="download" href="https://jaihospin4.com?code=7TA8XTHY3MN&t=1745498776">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="ind_bingo.jpg" alt="IND BINGO">
+      <div class="app-info">
+        <strong>IND BINGO</strong>
+        10M+ | Bonus ₹30
+      </div>
+      <a class="download" href="https://bingo91.vip?code=XU7QX913NFS&t=1745499112">Download</a>
+    </div>
+
+    <div class="app">
+      <img src="yono_arcade.jpg" alt="YONO ARCADE">
+      <div class="app-info">
+        <strong>YONO ARCADE</strong>
+        10M+ | Bonus ₹40
+      </div>
+      <a class="download" href="https://yonoofficial.com?code=F559HGJK4UB&t=1745499305">Download</a>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="gallery1.jpg" alt="Gallery 1">
+    <img src="gallery2.jpg" alt="Gallery 2">
+    <img src="gallery3.jpg" alt="Gallery 3">
+  </div>
+
+  <div class="disclaimer-bar">
+    <span>Play responsibly at your own risk. All earnings are subject to game rules and conditions.</span>
+  </div>
+
+</body>
+</html>
