@@ -20,6 +20,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
     * {
       margin: 0;
@@ -64,41 +65,16 @@
     }
 
     .header .line1, .header .line2, .header .line3 {
-      position: relative;
-    }
-
-    /* Stylish Underline */
-    .header .line1::after,
-    .header .line2::after,
-    .header .line3::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -5px;
-      height: 3px;
-      background: black;
-    }
-
-    .header .line1::after {
-      width: 80%; /* Adjust width for 'ALL' */
-      margin-left: 10%;
-    }
-
-    .header .line2::after {
-      width: 70%; /* Adjust width for 'YONO' */
-      margin-left: 15%;
-    }
-
-    .header .line3::after {
-      width: 60%; /* Adjust width for 'GAMES' */
-      margin-left: 20%;
+      border-bottom: 3px solid yellow;
+      padding-bottom: 5px;
+      font-weight: bold;
     }
 
     .notice-bar {
       background-color: black;
       overflow: hidden;
       white-space: nowrap;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .notice-bar span {
@@ -106,10 +82,10 @@
       padding: 10px 0;
       font-size: 1.1em;
       color: #ffe600;
-      font-family: 'Luckiest Guy', cursive;
+      font-weight: normal; /* Changed to normal weight */
       text-align: center;
       animation: scrollRightToLeft 20s linear infinite;
-      font-weight: normal; /* Made unbold */
+      font-family: 'Luckiest Guy', cursive;
     }
 
     .app-container {
