@@ -74,22 +74,21 @@
       background: linear-gradient(135deg, #004d00, black);
       display: flex;
       justify-content: center;
-      gap: 15px;
       padding: 10px;
+      gap: 10px;
     }
 
     .menu-bar button {
       flex: 1;
-      max-width: 200px;
-      min-width: 150px;
-      text-align: center;
+      max-width: 150px;
       background: transparent;
       border: 2px solid #ffe600;
       color: #ffe600;
-      padding: 10px 0;
+      padding: 8px 16px;
       border-radius: 10px;
       font-weight: bold;
       font-size: 1em;
+      text-align: center;
       cursor: pointer;
       transition: 0.3s;
     }
@@ -98,6 +97,10 @@
     .menu-bar button.active {
       background-color: #ffe600;
       color: black;
+    }
+
+    .app-container, .gallery {
+      transition: all 0.5s ease;
     }
 
     .app-container {
@@ -241,7 +244,7 @@
   <div class="menu-bar">
     <button class="active" onclick="showSection('home')">Home</button>
     <button onclick="showSection('about')">About Us</button>
-    <button onclick="window.open('https://t.me/officialhacker52', '_blank')">Telegram Channel</button>
+    <button onclick="window.open('https://t.me/officialhacker52', '_blank')">Telegram</button>
   </div>
 
   <div id="home-section">
