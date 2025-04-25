@@ -74,15 +74,19 @@
       background: linear-gradient(135deg, #004d00, black);
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
       padding: 10px;
     }
 
     .menu-bar button {
+      flex: 1;
+      max-width: 200px;
+      min-width: 150px;
+      text-align: center;
       background: transparent;
       border: 2px solid #ffe600;
       color: #ffe600;
-      padding: 8px 16px;
+      padding: 10px 0;
       border-radius: 10px;
       font-weight: bold;
       font-size: 1em;
@@ -94,10 +98,6 @@
     .menu-bar button.active {
       background-color: #ffe600;
       color: black;
-    }
-
-    .app-container, .gallery {
-      transition: all 0.5s ease;
     }
 
     .app-container {
