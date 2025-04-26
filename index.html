@@ -14,209 +14,51 @@
   <meta name="twitter:title" content="YONO GAMES" />
   <meta name="twitter:description" content="Join YONO GAMES now to get the best gaming apps with incredible bonuses! Download now and start playing!" />
   <meta name="twitter:image" content="path-to-your-image.jpg" />
-<meta name="google-site-verification" content="6PxxS1g-Mqz4I2VExJEnVG_Pv2Dnc09oO2VpCVeMiO4" />
+  <meta name="google-site-verification" content="6PxxS1g-Mqz4I2VExJEnVG_Pv2Dnc09oO2VpCVeMiO4" />
   <title>ALL YONO GAMES</title>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: #28a745;
-      font-family: 'Arial', sans-serif;
-      color: white;
-    }
-
-    .header {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 4em;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px 10px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .header .line1, .header .line2, .header .line3 {
-      color: #ffe600;
-      text-shadow: 2px 2px 5px black, 0 0 25px yellow, 0 0 5px darkgoldenrod;
-      margin: 0;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: #28a745; font-family: 'Arial', sans-serif; color: white; }
+    .header { font-family: 'Archivo Black', sans-serif; font-size: 4em; font-weight: bold; text-align: center; padding: 20px 10px; color: white; display: flex; flex-direction: column; align-items: center; }
+    .header .line1, .header .line2, .header .line3 { color: #ffe600; text-shadow: 2px 2px 5px black, 0 0 25px yellow, 0 0 5px darkgoldenrod; margin: 0; }
     .header .line1 { margin-left: 30px; }
     .header .line2 { margin-left: 100px; }
     .header .line3 { margin-left: 200px; }
 
-    .notice-bar {
-      background-color: #006400; /* Dark Green */
-      overflow: hidden;
-      white-space: nowrap;
-    }
+    .notice-bar { background-color: #006400; overflow: hidden; white-space: nowrap; }
+    .notice-bar span { display: inline-block; padding: 10px 0; font-size: 0.90em; color: #ffe600; font-weight: bold; animation: scrollRightToLeft 18s linear infinite; }
 
-    .notice-bar span {
-      display: inline-block;
-      padding: 10px 0;
-      font-size: 0.90em;
-      color: #ffe600;
-      font-weight: bold;
-      animation: scrollRightToLeft 18s linear infinite;
-    }
+    .menu-bar { background-color: black; display: flex; justify-content: center; padding: 10px; gap: 10px; }
+    .menu-bar button { flex: 1; max-width: 150px; background: transparent; border: 2px solid #ffe600; color: #ffe600; padding: 8px 16px; border-radius: 10px; font-weight: bold; font-size: 1em; cursor: pointer; transition: 0.3s; }
+    .menu-bar button:hover, .menu-bar button.active { background-color: #ffe600; color: black; }
 
-    .menu-bar {
-      background-color: black; /* Black background for menu bar */
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      gap: 10px;
-    }
+    .app-container, .gallery { transition: all 0.5s ease; }
+    .app-container { display: flex; flex-direction: column; gap: 12px; padding: 10px; }
+    .app { background-color: #004d00; border-radius: 15px; padding: 10px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 10px rgba(0,0,0,0.4); border: 2px solid #ffe600; flex-wrap: wrap; }
+    .app img { width: 50px; height: 50px; object-fit: cover; border-radius: 12px; border: 2px solid #fff; }
+    .app-info { flex: 1; padding: 0 10px; font-size: 0.9em; min-width: 120px; }
+    .app-info strong { font-size: 1em; display: block; color: #ffe600; }
+    .download { background-color: #ffdd57; color: black; padding: 16px 24px; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 1.2em; transition: 0.3s ease; }
+    .download:hover { background-color: #ffd000; transform: scale(1.2); }
 
-    .menu-bar button {
-      flex: 1;
-      max-width: 150px;
-      background: transparent;
-      border: 2px solid #ffe600;
-      color: #ffe600;
-      padding: 8px 16px;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1em;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .menu-bar button:hover,
-    .menu-bar button.active {
-      background-color: #ffe600;
-      color: black;
-    }
-
-    .app-container, .gallery {
-      transition: all 0.5s ease;
-    }
-
-    .app-container {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      padding: 10px;
-    }
-
-    .app {
-      background-color: #004d00;
-      border-radius: 15px;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-      border: 2px solid #ffe600;
-      flex-wrap: wrap;
-    }
-
-    .app img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 2px solid #fff;
-    }
-
-    .app-info {
-      flex: 1;
-      padding: 0 10px;
-      font-size: 0.9em;
-      min-width: 120px;
-    }
-
-    .app-info strong {
-      font-size: 1em;
-      display: block;
-      color: #ffe600;
-    }
-
-    .download {
-      background-color: #ffdd57;
-      color: black;
-      padding: 16px 24px; /* Increased padding */
-      text-decoration: none;
-      border-radius: 12px; /* Slightly more rounded */
-      font-weight: bold;
-      font-size: 1.2em; /* Increased font size */
-      transition: 0.3s ease;
-    }
-
-    .download:hover {
-      background-color: #ffd000;
-      transform: scale(1.2); /* Increased scale for hover effect */
-    }
-
-    .gallery {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-around;
-      gap: 10px;
-      flex-wrap: wrap;
-      padding: 10px;
-    }
-
-    .gallery img {
-      width: 30%;
-      max-width: 120px;
-      height: auto;
-      border-radius: 10px;
-      filter: blur(5px);
-      transition: filter 1s ease-in-out;
-    }
-
+    .gallery { margin-top: 30px; display: flex; justify-content: space-around; gap: 10px; flex-wrap: wrap; padding: 10px; }
+    .gallery img { width: 30%; max-width: 120px; height: auto; border-radius: 10px; filter: blur(5px); transition: filter 1s ease-in-out; }
     .gallery img.unblur { filter: blur(0); }
 
-    .disclaimer-bar {
-      background-color: black;
-      overflow: hidden;
-      white-space: nowrap;
-      margin-top: 20px;
-    }
+    .disclaimer-bar { background-color: black; overflow: hidden; white-space: nowrap; margin-top: 20px; }
+    .disclaimer-bar span { display: inline-block; padding: 10px 0; font-size: 0.85em; color: #ffe600; font-weight: bold; animation: scrollRightToLeft 18s linear infinite; }
 
-    .disclaimer-bar span {
-      display: inline-block;
-      padding: 10px 0;
-      font-size: 0.85em;
-      color: #ffe600;
-      font-weight: bold;
-      animation: scrollRightToLeft 18s linear infinite;
-    }
+    #about-section { display: none; padding: 20px; background-color: #003300; border-top: 2px solid #ffe600; font-size: 1em; color: #fffbd1; line-height: 1.6; }
 
-    @keyframes scrollRightToLeft {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-
-    @keyframes unblurCycle {
-      0%, 30% { filter: blur(0); }
-      33%, 100% { filter: blur(5px); }
-    }
-
+    @keyframes scrollRightToLeft { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    @keyframes unblurCycle { 0%, 30% { filter: blur(0); } 33%, 100% { filter: blur(5px); } }
     .gallery img:nth-child(1) { animation: unblurCycle 9s infinite; animation-delay: 0s; }
     .gallery img:nth-child(2) { animation: unblurCycle 9s infinite; animation-delay: 3s; }
     .gallery img:nth-child(3) { animation: unblurCycle 9s infinite; animation-delay: 6s; }
-
-    #about-section {
-      display: none;
-      padding: 20px;
-      background-color: #003300;
-      border-top: 2px solid #ffe600;
-      font-size: 1em;
-      color: #fffbd1;
-      line-height: 1.6;
-    }
 
     @media (max-width: 500px) {
       .header { font-size: 2em; }
@@ -226,6 +68,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="header">
@@ -253,26 +96,37 @@
         <div class="app-info"><strong>SPIN CRUSH</strong>10M+ | Bonus ₹40</div>
         <a class="download" href="https://2shisgjsqawwhsagui7c.Safelyearnmillionsbysharingonepersonaqfxzqyfw.com?code=ADE7X99JX92&t=1745498414">Download</a>
       </div>
+
       <div class="app">
         <img src="yono_rummy.jpg" alt="YONO RUMMY">
         <div class="app-info"><strong>YONO RUMMY</strong>10M+ | Bonus ₹30</div>
         <a class="download" href="https://yonorummyg.com?code=TQJPFHAM2TH&t=1745498673">Download</a>
       </div>
+
       <div class="app">
         <img src="jaiho_spin.jpg" alt="JAIHO SPIN">
         <div class="app-info"><strong>JAIHO SPIN</strong>10M+ | Bonus ₹25</div>
         <a class="download" href="https://jaihospin4.com?code=7TA8XTHY3MN&t=1745498776">Download</a>
       </div>
+
       <div class="app">
         <img src="ind_bingo.jpg" alt="IND BINGO">
         <div class="app-info"><strong>IND BINGO</strong>10M+ | Bonus ₹30</div>
         <a class="download" href="https://bingo91.vip?code=XU7QX913NFS&t=1745499112">Download</a>
       </div>
+
       <div class="app">
         <img src="yono_arcade.jpg" alt="YONO ARCADE">
         <div class="app-info"><strong>YONO ARCADE</strong>10M+ | Bonus ₹40</div>
         <a class="download" href="https://yonoofficial.com?code=F559HGJK4UB&t=1745499305">Download</a>
       </div>
+
+      <div class="app">
+        <img src="teen_patti_master.jpg" alt="Teen Patti Master">
+        <div class="app-info"><strong>TEEN PATTI MASTER</strong>10M+ | Bonus ₹40</div>
+        <a class="download" href="https://www.earntp.com/m/l34ii">Download</a>
+      </div>
+
     </div>
 
     <div class="gallery">
@@ -286,11 +140,9 @@
     <h2 style="color: #ffe600;">About Us</h2>
     <p>At YONO GAMES, we specialize in developing high-quality mobile gaming apps that not only entertain but also reward users. Our mission is to blend fun with functionality, giving players an opportunity to earn real bonuses while enjoying their favorite games.</p>
     <p>We focus on modern web performance and mobile app SEO strategies to ensure visibility, fast load times, and user engagement. Our apps are designed with secure download links, attractive interfaces, and frequent updates.</p>
-    <p>Download our top apps:</p>
-    <ul>
-      <li><a class="download" href="https://yonoofficial.com">YONO ARCADE</a></li>
-      <li><a class="download" href="https://yonorummyg.com">YONO RUMMY</a></li>
-    </ul>
+
+    <h2 style="color: #ffe600; margin-top:20px;">सावधानी से खेलें</h2>
+    <p>गेम खेलते समय हमेशा सतर्क रहें। पैसे का निवेश सोच-समझकर करें। योनो गेम्स किसी भी प्रकार के नुकसान के लिए जिम्मेदार नहीं है। खेल को मनोरंजन के रूप में लें और अपनी वित्तीय सीमाओं का ध्यान रखें।</p>
   </div>
 
   <div class="disclaimer-bar">
