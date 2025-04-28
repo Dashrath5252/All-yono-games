@@ -114,7 +114,7 @@
   </div>
 
   <div class="menu-bar">
-    <button class="active" onclick="showSection('home')">Home</button>
+    <button id="homeButton" class="active" onclick="showSection('home')">Home</button>
     <button onclick="showSection('about')">About Us</button>
     <button onclick="window.open('https://t.me/officialhacker52', '_blank')">Telegram</button>
   </div>
@@ -179,10 +179,8 @@
     <p>Join us today and start playing to earn real rewards while enjoying the best mobile gaming experiences available. Thank you for choosing YONO GAMES!</p>
     <br>
     <h2 style="color: #ffe600; margin-top:20px;">सावधानी से खेलें</h2>
-<br>
-  
-   
-   <p>गेम खेलते समय हमेशा सतर्क रहें। पैसे का निवेश सोच-समझकर करें। योनो गेम्स किसी भी प्रकार के नुकसान के लिए जिम्मेदार नहीं है। खेल को मनोरंजन के रूप में लें और अपनी वित्तीय सीमाओं का ध्यान रखें।</p>
+    <br>
+    <p>गेम खेलते समय हमेशा सतर्क रहें। पैसे का निवेश सोच-समझकर करें। योनो गेम्स किसी भी प्रकार के नुकसान के लिए जिम्मेदार नहीं है। खेल को मनोरंजन के रूप में लें और अपनी वित्तीय सीमाओं का ध्यान रखें।</p>
   </div>
 
   <script>
@@ -192,11 +190,15 @@
 
       const buttons = document.querySelectorAll('.menu-bar button');
       buttons.forEach(button => button.classList.remove('active'));
-      event.target.classList.add('active');
+      if (section === 'home') {
+        document.getElementById('homeButton').classList.add('active');
+      }
     }
 
-    // Initially, show the home section
-    showSection('home');
+    // Initially, show the home section and set it as active
+    window.onload = function() {
+      showSection('home');
+    };
   </script>
 </body>
 </html>
