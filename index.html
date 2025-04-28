@@ -24,7 +24,7 @@
   <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="All Yono Games - Download Now and Get Bonus Upto ₹500" />
   <meta property="og:description" content="Download All Yono Games now and grab your bonus upto ₹500 instantly. Play your favorite games and earn real rewards easily!" />
-<meta property="og:image" content="https://www.yonogamez.com/og.jpg" />
+  <meta property="og:image" content="https://www.yonogamez.com/og.jpg" />
   <meta property="og:url" content="https://www.yonogamez.com/" />
   <meta property="og:type" content="website" />
 
@@ -46,15 +46,15 @@
   "image": "https://www.yonogamez.com/og.jpg"
 }
 </script>
-  <!-- CSS Styling (same as before, no changes) -->
+  <!-- CSS Styling -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background-color: #28a745; font-family: 'Arial', sans-serif; color: white; }
-    .header { font-family: 'Archivo Black', sans-serif; font-size: 4em; font-weight: bold; text-align: center; padding: 20px 10px; color: white; display: flex; flex-direction: column; align-items: center; }
-    .header .line1, .header .line2, .header .line3 { color: #ffe600; text-shadow: 2px 2px 5px black, 0 0 25px yellow, 0 0 5px darkgoldenrod; margin: 0; }
+    .header { font-family: 'Archivo Black', sans-serif; font-size: 5em; font-weight: bold; text-align: center; padding: 20px 10px; color: white; display: flex; flex-direction: column; align-items: center; text-shadow: 2px 2px 5px black, 0 0 25px yellow, 0 0 5px darkgoldenrod; }
+    .header .line1, .header .line2, .header .line3 { color: #ffe600; margin: 0; }
     .header .line1 { margin-left: 30px; }
     .header .line2 { margin-left: 100px; }
     .header .line3 { margin-left: 200px; }
@@ -179,24 +179,24 @@
     <p>Join us today and start playing to earn real rewards while enjoying the best mobile gaming experiences available. Thank you for choosing YONO GAMES!</p>
     <br>
     <h2 style="color: #ffe600; margin-top:20px;">सावधानी से खेलें</h2>
-    <p>गेम खेलते समय हमेशा सतर्क रहें। पैसे का निवेश सोच-समझकर करें। योनो गेम्स किसी भी प्रकार के नुकसान के लिए जिम्मेदार नहीं है। खेल को मनोरंजन के रूप में लें और अपनी वित्तीय सीमाओं का ध्यान रखें।</p>
-  </div>
-
-  <div class="disclaimer-bar">
-    <span>Play responsibly at your own risk. All earnings are subject to game rules and conditions.</span>
+<br>
+  
+   
+   <p>गेम खेलते समय हमेशा सतर्क रहें। पैसे का निवेश सोच-समझकर करें। योनो गेम्स किसी भी प्रकार के नुकसान के लिए जिम्मेदार नहीं है। खेल को मनोरंजन के रूप में लें और अपनी वित्तीय सीमाओं का ध्यान रखें।</p>
   </div>
 
   <script>
     function showSection(section) {
-      document.getElementById('home-section').style.display = section === 'home' ? 'block' : 'none';
-      document.getElementById('about-section').style.display = section === 'about' ? 'block' : 'none';
+      document.getElementById('home-section').style.display = (section === 'home') ? 'block' : 'none';
+      document.getElementById('about-section').style.display = (section === 'about') ? 'block' : 'none';
 
       const buttons = document.querySelectorAll('.menu-bar button');
-      buttons.forEach(btn => btn.classList.remove('active'));
-      if (section === 'home') buttons[0].classList.add('active');
-      if (section === 'about') buttons[1].classList.add('active');
+      buttons.forEach(button => button.classList.remove('active'));
+      event.target.classList.add('active');
     }
-  </script>
 
+    // Initially, show the home section
+    showSection('home');
+  </script>
 </body>
 </html>
