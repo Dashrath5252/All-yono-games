@@ -62,10 +62,38 @@
     .notice-bar { background-color: #006400; overflow: hidden; white-space: nowrap; }
     .notice-bar span { display: inline-block; padding: 10px 0; font-size: 0.90em; color: #ffe600; font-weight: bold; animation: scrollRightToLeft 18s linear infinite; }
 
-    .menu-bar { background-color: black; display: flex; justify-content: center; padding: 10px; gap: 10px; }
-    .menu-bar button { flex: 1; max-width: 150px; background: transparent; border: 2px solid #ffe600; color: #ffe600; padding: 8px 16px; border-radius: 10px; font-weight: bold; font-size: 1em; cursor: pointer; transition: 0.3s; }
-    .menu-bar button:hover, .menu-bar button.active { background-color: #ffe600; color: black; }
+.menu-bar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  border-top: 3px solid #ffe600;
+  border-bottom: 3px solid #ffe600;
+}
 
+.menu-bar button {
+  flex: 1;
+  max-width: 150px;
+  background-color: #222; /* Solid background for box effect */
+  border: 2px solid #ffe600;
+  color: #ffe600;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 2px 8px rgba(255, 230, 0, 0.4);
+}
+
+.menu-bar button:hover,
+.menu-bar button.active {
+  background-color: #ffe600;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px yellow;
+}
     .app-container, .gallery { transition: all 0.5s ease; }
     .app-container { display: flex; flex-direction: column; gap: 12px; padding: 10px; }
     .app { background-color: #004d00; border-radius: 15px; padding: 10px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 10px rgba(0,0,0,0.4); border: 2px solid #ffe600; flex-wrap: wrap; }
