@@ -232,15 +232,18 @@ button, button:focus, button:active {
 
   <script>
     function showSection(section) {
+  // Show/Hide correct section
   document.getElementById('home-section').style.display = (section === 'home') ? 'block' : 'none';
   document.getElementById('about-section').style.display = (section === 'about') ? 'block' : 'none';
 
+  // Remove active class from both buttons
   document.getElementById('homeButton').classList.remove('active');
   document.getElementById('aboutButton').classList.remove('active');
 
+  // Add active class only to selected button
   if (section === 'home') {
     document.getElementById('homeButton').classList.add('active');
-  } else if (section === 'about') {
+  } else {
     document.getElementById('aboutButton').classList.add('active');
   }
     }
