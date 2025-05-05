@@ -232,20 +232,18 @@ button, button:focus, button:active {
 
   <script>
     function showSection(section) {
-      document.getElementById('home-section').style.display = (section === 'home') ? 'block' : 'none';
-      document.getElementById('about-section').style.display = (section === 'about') ? 'block' : 'none';
+  document.getElementById('home-section').style.display = (section === 'home') ? 'block' : 'none';
+  document.getElementById('about-section').style.display = (section === 'about') ? 'block' : 'none';
 
-      const buttons = document.querySelectorAll('.menu-bar button');
-      buttons.forEach(button => button.classList.remove('active'));
-      if (section === 'home') {
-        document.getElementById('homeButton').classList.add('active');
-      }
+  document.getElementById('homeButton').classList.remove('active');
+  document.getElementById('aboutButton').classList.remove('active');
+
+  if (section === 'home') {
+    document.getElementById('homeButton').classList.add('active');
+  } else if (section === 'about') {
+    document.getElementById('aboutButton').classList.add('active');
+  }
     }
-
-    // Initially, show the home section and set it as active
-    window.onload = function() {
-      showSection('home');
-    };
 
 
       </script>
