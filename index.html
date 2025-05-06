@@ -117,19 +117,9 @@
     .app img { width: 50px; height: 50px; object-fit: cover; border-radius: 12px; border: 2px solid #fff; }
     .app-info { flex: 1; padding: 0 10px; font-size: 0.9em; min-width: 120px; }
     .app-info strong { font-size: 1em; display: block; color: #ffe600; }
+    .download { background-color: #ffdd57; color: black; padding: 16px 24px; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 1.2em; transition: 0.3s ease; }
+    .download:hover { background-color: #ffd000; transform: scale(1.2); }
 
-  .fake-download-btn {
-      background-color: #ffe600;
-      color: black;
-      font-weight: bold;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-size: 0.9em;
-      margin-top: 8px;
-      display: inline-block;
-    }
-   
     .gallery { margin-top: 30px; display: flex; justify-content: space-around; gap: 10px; flex-wrap: wrap; padding: 10px; }
     .gallery img { width: 30%; max-width: 120px; height: auto; border-radius: 10px; filter: blur(5px); transition: filter 1s ease-in-out; }
     .gallery img.unblur { filter: blur(0); }
@@ -139,82 +129,17 @@
 
     #about-section { display: none; padding: 20px; background-color: #003300; border-top: 2px solid #ffe600; font-size: 1em; color: #fffbd1; line-height: 1.6; }
 
-     .popup-overlay {
-      position: fixed;
-      top: 00px; /* shifted below header and menu */
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.65);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    .popup-content {
-      background-color: #004d00;
-      border: 3px solid #ffe600;
-      padding: 20px;
-      border-radius: 20px;
-      text-align: center;
-      color: white;
-      max-width: 280px;
-      width: 85%;
-      box-shadow: 0 0 15px yellow;
-    }
-    .popup-content img {
-      width: 80px;
-      height: 80px;
-      border-radius: 16px;
-      border: 2px solid #fff;
-      margin-bottom: 12px;
-    }
-    .popup-content h2 {
-      margin: 10px 0;
-      font-size: 1.5em;
-      color: #ffe600;
-    }
-    .popup-content .stars {
-      color: gold;
-      font-size: 1.5em;
-      margin: 10px 0;
-    }
-    .popup-download {
-      display: inline-block;
-      background-color: #ffe600;
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 12px;
-      font-size: 1.1em;
-      margin-top: 15px;
-      transition: 0.3s;
-    }
-    .popup-download:hover {
-      background-color: #ffcc00;
-      transform: scale(1.1);
-    }
     @keyframes scrollRightToLeft { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
     @keyframes unblurCycle { 0%, 30% { filter: blur(0); } 33%, 100% { filter: blur(5px); } }
     .gallery img:nth-child(1) { animation: unblurCycle 9s infinite; animation-delay: 0s; }
     .gallery img:nth-child(2) { animation: unblurCycle 9s infinite; animation-delay: 3s; }
     .gallery img:nth-child(3) { animation: unblurCycle 9s infinite; animation-delay: 6s; }
 
-   @media screen and (max-width: 768px) {
-.header { font-size: 3em; }
-.app { width: 90%; }
-.gallery img { width: 45%; }
-}
-
-@media screen and (max-width: 480px) {
-.header { font-size: 2.5em; }
-.app { width: 95%; }
-.gallery img { width: 70%; }
-.popup-content { padding: 16px; }
-}
-
+    @media (max-width: 500px) {
+      .header { font-size: 2em; }
+      .gallery img { width: 30%; }
+      .app-info { font-size: 0.8em; }
+      .download { font-size: 0.85em; padding: 8px 12px; }
     }
     
     a, a:focus, a:active, a:visited,
@@ -253,29 +178,21 @@ button, button:focus, button:active {
 
       
             
-      <div class="app" onclick="showPopup({ img: 'spin_crush.jpg', name: 'SPIN CRUSH', rating: 4.6, bonus: 40, downloads: '10M+', link: 'https://2shisgjsqawwhsagui7c.Safelyearnmillionsbysharingonepersonaqfxzqyfw.com?code=ADE7X99JX92&t=1745498414' })">
+      <div class="app">
         <img src="spin_crush.jpg" alt="Spin Crush">
-        <div class="app-info">
-          <strong>SPIN CRUSH</strong>
-          10M+ | Bonus ₹40
-          <div><span class="fake-download-btn">Download</span></div>
-
-   <div class="app" onclick="showPopup({ img: 'teen_patti_master.jpg', name: 'TEEN PATTI MASTER', rating: 4.3, bonus: 40, downloads: '10M+', link: 'https://www.earntp.com/m/l34ii' })">
+        <div class="app-info"><strong>SPIN CRUSH</strong>10M+ | Bonus ₹40</div>
+        <a class="download" href="https://2shisgjsqawwhsagui7c.Safelyearnmillionsbysharingonepersonaqfxzqyfw.com?code=ADE7X99JX92&t=1745498414">Download</a>
+      </div>
+<div class="app">
         <img src="teen_patti_master.jpg" alt="Teen Patti Master">
-        <div class="app-info">
-          <strong>TEEN PATTI MASTER</strong>
-          10M+ | Bonus ₹40
-          <div><span class="fake-download-btn">Download</span></div>
-        </div>
+        <div class="app-info"><strong>TEEN PATTI MASTER</strong>10M+ | Bonus ₹40</div>
+        <a class="download" href="https://www.earntp.com/m/l34ii">Download</a>
       </div>
 
-        <div class="app" onclick="showPopup({ img: 'yono_rummy.jpg', name: 'YONO RUMMY', rating: 4.4, bonus: 30, downloads: '10M+', link: 'https://yonorummyg.com?code=TQJPFHAM2TH&t=1745498673' })">
+      <div class="app">
         <img src="yono_rummy.jpg" alt="YONO RUMMY">
-        <div class="app-info">
-          <strong>YONO RUMMY</strong>
-          10M+ | Bonus ₹30
-          <div><span class="fake-download-btn">Download</span></div>
-        </div>
+        <div class="app-info"><strong>YONO RUMMY</strong>10M+ | Bonus ₹30</div>
+        <a class="download" href="https://yonorummyg.com?code=TQJPFHAM2TH&t=1745498673">Download</a>
       </div>
 
       <div class="app">
@@ -327,29 +244,7 @@ button, button:focus, button:active {
     <p>गेम खेलते समय हमेशा सतर्क रहें। पैसे का निवेश सोच-समझकर करें। योनो गेम्स किसी भी प्रकार के नुकसान के लिए जिम्मेदार नहीं है। खेल को मनोरंजन के रूप में लें और अपनी वित्तीय सीमाओं का ध्यान रखें।</p>
   </div>
 
-<div id="popup-overlay" class="popup-overlay">
-    <div class="popup-content">
-      <img id="popup-img" src="" alt="App Icon">
-      <h2 id="popup-title">App Name</h2>
-      <p class="stars" id="popup-stars">★★★★☆</p>
-      <p id="popup-bonus">Bonus: ₹<span id="popup-bonus-amount">0</span></p>
-      <p id="popup-downloads">Downloads: <span id="popup-download-count">0</span></p>
-      <a id="popup-download" class="popup-download" href="#" target="_blank">Download Now</a>
-    </div>
-  </div>
-
   <script>
-
-
-function showPopup(app) {
-      document.getElementById('popup-img').src = app.img;
-      document.getElementById('popup-title').innerText = app.name;
-      document.getElementById('popup-stars').innerText = '★'.repeat(Math.round(app.rating)) + '☆'.repeat(5 - Math.round(app.rating));
-      document.getElementById('popup-bonus-amount').innerText = app.bonus;
-      document.getElementById('popup-download-count').innerText = app.downloads;
-      document.getElementById('popup-download').href = app.link;
-      document.getElementById('popup-overlay').style.display = 'flex';
-    }
     function showSection(section) {
   // Show/Hide correct section
   document.getElementById('home-section').style.display = (section === 'home') ? 'block' : 'none';
@@ -364,13 +259,8 @@ function showPopup(app) {
     document.getElementById('homeButton').classList.add('active');
   } else {
     document.getElementById('aboutButton').classList.add('active');
-}
-document.getElementById('popup-overlay').addEventListener('click', function(e) {
-      if (e.target === document.getElementById('popup-overlay')) {
-        document.getElementById('popup-overlay').style.display = 'none';
-      }
-    });
- 
+  }
+    }
 
 
       </script>
