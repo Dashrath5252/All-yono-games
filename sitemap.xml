@@ -3,9 +3,25 @@
 
   <url>
     <loc>https://www.yonogamez.com/</loc>
-    <lastmod>2025-04-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-05-11</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://www.yonogamez.com/about</loc>
+    <lastmod>2025-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.yonogamez.com/contact</loc>
+    <lastmod>2025-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Add more URLs here if you have blog pages, game pages, etc. -->
 
 </urlset>
