@@ -2,26 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.yonogamez.com/</loc>
-    <lastmod>2025-05-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <loc>https://yonogamez.com/</loc>
   </url>
 
   <url>
-    <loc>https://www.yonogamez.com/about</loc>
-    <lastmod>2025-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://yonogamez.com/spin-crush.html</loc>
   </url>
 
   <url>
-    <loc>https://www.yonogamez.com/contact</loc>
-    <lastmod>2025-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://yonogamez.com/teen_patti_master.html</loc>
   </url>
 
-  <!-- Add more URLs here if you have blog pages, game pages, etc. -->
+  <url>
+    <loc>https://yonogamez.com/yono_rummy.html</loc>
+  </url>
 
 </urlset>
