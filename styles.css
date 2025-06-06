@@ -32,16 +32,17 @@ height: 90px;
 border-radius: 20px;
 }
 .app-meta {
-margin-left: 20px;
+  margin-left: 20px;
+  flex: 1;
 }
 .playstore-stats {
   display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  justify-content: space-around;
+  margin-top: 10px;
+  border: none;
+  padding: 0;
   text-align: center;
+  gap: 10px;
 }
 
 .stat-block {
@@ -49,15 +50,15 @@ margin-left: 20px;
 }
 
 .stat-block strong {
-  font-size: 18px;
-  display: block;
+  font-size: 16px;
+  font-weight: 600;
   color: #000;
 }
 
 .stat-block p {
-  font-size: 13px;
+  font-size: 12px;
   color: #666;
-  margin: 4px 0 0;
+  margin: 2px 0 0;
 }
 .full-width-wrapper {
   width: 100vw;
