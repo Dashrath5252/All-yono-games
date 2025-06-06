@@ -42,7 +42,6 @@ border-radius: 10px;
 font-size: 14px;
 }
 .download-btn {
-display: block; /* 👈 inline-block को block में बदलें /
 position: relative;
 background: #0f9d58;
 color: #fff;
@@ -58,6 +57,7 @@ max-width: 100%;     / 👈 अगर container है तो उसे respect 
 text-align: center;  / 👈 text center में */
 box-sizing: border-box;
 }
+
 
 /* Diagonal shimmer effect */
 .download-btn::before {
