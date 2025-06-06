@@ -47,7 +47,7 @@ body {
   position: relative;
   background: #0f9d58;
   color: #fff;
-  padding: 16px 20px;
+  padding: 16px 100px;
   margin: 10px auto;  /* 👈 auto margin से center भी रहेगा */
   border-radius: 6px;
   text-decoration: none;
