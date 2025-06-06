@@ -42,22 +42,22 @@ border-radius: 10px;
 font-size: 14px;
 }
 .download-btn {
+display: block; 
 position: relative;
 background: #0f9d58;
 color: #fff;
 padding: 16px 20px;
-margin: 10px auto;  / 👈 auto margin से center भी रहेगा /
+margin: 10px auto;  
 border-radius: 6px;
 text-decoration: none;
 font-weight: bold;
 overflow: hidden;
 z-index: 1;
-width: 100%;         / 👈 FULL WIDTH /
-max-width: 100%;     / 👈 अगर container है तो उसे respect करेगा /
-text-align: center;  / 👈 text center में */
+width: 100%;         
+max-width: 100%;     
+text-align: center;
 box-sizing: border-box;
 }
-
 
 /* Diagonal shimmer effect */
 .download-btn::before {
@@ -105,5 +105,5 @@ height: 200px;
 object-fit: cover;
 border-radius: 10px;
 }
-
+Isme botton nahi ho raha width
 
