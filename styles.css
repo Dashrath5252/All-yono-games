@@ -42,26 +42,25 @@ body {
   border-radius: 10px;
   font-size: 14px;
 }
-.download-btn {
-  display: block; /* 👈 inline-block को block में बदलें */
-  position: relative;
+.full-width-button {
+  display: block;
+  width: 100vw;             /* 👈 Full screen width */
+  margin-left: calc(-50vw + 50%); /* 👈 Centered full width inside any container */
   background: #0f9d58;
-  color: #fff;
-  padding: 16px 20px;
-  margin: 10px auto;  /* 👈 auto margin से center भी रहेगा */
-  border-radius: 6px;
-  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
+  border-radius: 0;
+  position: relative;
   overflow: hidden;
   z-index: 1;
-  width: 100%;         /* 👈 FULL WIDTH */
-  max-width: 100%;     /* 👈 अगर container है तो उसे respect करेगा */
-  text-align: center;  /* 👈 text center में */
-  box-sizing: border-box;
 }
 
-/* Diagonal shimmer effect */
-.download-btn::before {
+/* Optional shimmer */
+.full-width-button::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -74,17 +73,16 @@ body {
     rgba(255, 255, 255, 0.4) 50%,
     rgba(255, 255, 255, 0) 70%
   );
-  animation: diagonalShine 2s infinite;
+  animation: shine 2s infinite;
   z-index: 0;
-  transform: rotateZ(0deg);
 }
 
-.download-btn span {
+.full-width-button span {
   position: relative;
   z-index: 2;
 }
 
-@keyframes diagonalShine {
+@keyframes shine {
   0% {
     transform: translateX(-100%) rotateZ(25deg);
   }
