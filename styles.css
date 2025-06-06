@@ -34,12 +34,30 @@ border-radius: 20px;
 .app-meta {
 margin-left: 20px;
 }
-.badges span {
-margin-right: 10px;
-background: #e0e0e0;
-padding: 4px 8px;
-border-radius: 10px;
-font-size: 14px;
+.playstore-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.stat-block {
+  flex: 1;
+}
+
+.stat-block strong {
+  font-size: 18px;
+  display: block;
+  color: #000;
+}
+
+.stat-block p {
+  font-size: 13px;
+  color: #666;
+  margin: 4px 0 0;
 }
 .full-width-wrapper {
   width: 100vw;
