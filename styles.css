@@ -139,10 +139,6 @@ object-fit: cover;
 border-radius: 10px;
 }
 
-.screenshots img:first-child {
-  transform: translateX(-10px);
-}
-
 .user-reviews {
   margin-top: 30px;
   padding: 20px;
