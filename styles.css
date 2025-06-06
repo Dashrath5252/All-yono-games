@@ -175,4 +175,8 @@ border-radius: 10px;
   color: #fbc02d;
   font-size: 16px;
 }
-
+.download-btn {
+  -webkit-tap-highlight-color: transparent; /* Remove blue tap highlight on mobile */
+  outline: none; /* Remove blue outline on click */
+  box-shadow: none; /* Optional: remove any default shadow */
+}
