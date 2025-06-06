@@ -48,7 +48,7 @@ body {
   background: #0f9d58;
   color: #fff;
   padding: 16px 20px;
-  margin: 100px auto;  /* 👈 auto margin से center भी रहेगा */
+  margin: 10px auto;  /* 👈 auto margin से center भी रहेगा */
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
