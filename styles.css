@@ -44,13 +44,49 @@ body {
 }
 .download-btn {
   display: inline-block;
+  position: relative;
   background: #0f9d58;
   color: #fff;
-  padding: 10px 15px;
+  padding: 12px 20px;
   margin-top: 10px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Diagonal shimmer effect */
+.download-btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  animation: diagonalShine 2s infinite;
+  z-index: 0;
+  transform: rotateZ(0deg);
+}
+
+.download-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes diagonalShine {
+  0% {
+    transform: translateX(-100%) rotateZ(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotateZ(25deg);
+  }
 }
 .about-app {
   margin-top: 30px;
