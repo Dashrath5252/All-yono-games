@@ -43,20 +43,21 @@ body {
   font-size: 14px;
 }
 .download-btn {
-  display: block;
-  width: 100vw; /* 👈 Full screen width */
-  margin-left: -20px; /* 👈 Remove container padding if needed */
-  background: #0f9d58;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 0; /* 👈 Edge-to-edge look */
+  display: block; /* 👈 inline-block को block में बदलें */
   position: relative;
+  background: #0f9d58;
+  color: #fff;
+  padding: 16px 20px;
+  margin: 10px auto;  /* 👈 auto margin से center भी रहेगा */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
   overflow: hidden;
   z-index: 1;
+  width: 100%;         /* 👈 FULL WIDTH */
+  max-width: 100%;     /* 👈 अगर container है तो उसे respect करेगा */
+  text-align: center;  /* 👈 text center में */
+  box-sizing: border-box;
 }
 
 /* Diagonal shimmer effect */
