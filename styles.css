@@ -1,105 +1,109 @@
-
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-  color: #222;
+font-family: Arial, sans-serif;
+background: #fff;
+margin: 0;
+padding: 0;
+color: #222;
 }
 .container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
+max-width: 600px;
+margin: auto;
+padding: 20px;
 }
 .header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
 }
 .playstore-logo {
-  width: 60px;
+width: 60px;
 }
 .verified-icon {
-  width: 30px;
-  vertical-align: middle;
+width: 30px;
+vertical-align: middle;
 }
 .app-info {
-  display: flex;
-  margin-top: 20px;
+display: flex;
+margin-top: 20px;
 }
 .app-icon {
-  width: 90px;
-  height: 90px;
-  border-radius: 20px;
+width: 90px;
+height: 90px;
+border-radius: 20px;
 }
 .app-meta {
-  margin-left: 20px;
+margin-left: 20px;
 }
 .badges span {
-  margin-right: 10px;
-  background: #e0e0e0;
-  padding: 4px 8px;
-  border-radius: 10px;
-  font-size: 14px;
+margin-right: 10px;
+background: #e0e0e0;
+padding: 4px 8px;
+border-radius: 10px;
+font-size: 14px;
 }
 .download-btn {
-  display: inline-block;
-  position: relative;
-  background: #0f9d58;
-  color: #fff;
-  padding: 12px 20px;
-  margin-top: 10px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  overflow: hidden;
-  z-index: 1;
-  font-size: 16px;
+display: block; /* 👈 inline-block को block में बदलें /
+position: relative;
+background: #0f9d58;
+color: #fff;
+padding: 16px 20px;
+margin: 10px auto;  / 👈 auto margin से center भी रहेगा /
+border-radius: 6px;
+text-decoration: none;
+font-weight: bold;
+overflow: hidden;
+z-index: 1;
+width: 100%;         / 👈 FULL WIDTH /
+max-width: 100%;     / 👈 अगर container है तो उसे respect करेगा /
+text-align: center;  / 👈 text center में */
+box-sizing: border-box;
 }
 
 /* Diagonal shimmer effect */
 .download-btn::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  animation: diagonalShine 2s infinite;
-  z-index: 0;
+content: "";
+position: absolute;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: linear-gradient(
+120deg,
+rgba(255, 255, 255, 0) 30%,
+rgba(255, 255, 255, 0.4) 50%,
+rgba(255, 255, 255, 0) 70%
+);
+animation: diagonalShine 2s infinite;
+z-index: 0;
+transform: rotateZ(0deg);
 }
 
 .download-btn span {
-  position: relative;
-  z-index: 2;
+position: relative;
+z-index: 2;
 }
 
 @keyframes diagonalShine {
-  0% {
-    transform: translateX(-100%) rotateZ(25deg);
-  }
-  100% {
-    transform: translateX(100%) rotateZ(25deg);
-  }
+0% {
+transform: translateX(-100%) rotateZ(25deg);
 }
-
+100% {
+transform: translateX(100%) rotateZ(25deg);
+}
+}
 .about-app {
-  margin-top: 30px;
+margin-top: 30px;
 }
 .screenshots {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
+margin-top: 20px;
+display: flex;
+gap: 10px;
 }
 .screenshots img {
-  width: 100px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+width: 100px;
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
 }
+
+
