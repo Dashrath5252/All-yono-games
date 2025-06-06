@@ -140,7 +140,7 @@ border-radius: 10px;
 }
 
 .screenshots img:first-child {
-  transform: translateX(-5px);
+  transform: translateX(-10px);
 }
 
 .user-reviews {
