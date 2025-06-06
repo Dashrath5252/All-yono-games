@@ -41,55 +41,60 @@ padding: 4px 8px;
 border-radius: 10px;
 font-size: 14px;
 }
-.download-btn {
-display: block; 
-position: relative;
-background: #0f9d58;
-color: #fff;
-padding: 16px 20px;
-margin: 10px auto;  
-border-radius: 6px;
-text-decoration: none;
-font-weight: bold;
-overflow: hidden;
-z-index: 1;
-width: 100%;         
-max-width: 100%;     
-text-align: center;
-box-sizing: border-box;
+.full-width-wrapper {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 0 16px; /* Thoda side se gap dene ke liye */
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
-/* Diagonal shimmer effect */
-.download-btn::before {
-content: "";
-position: absolute;
-top: -50%;
-left: -50%;
-width: 200%;
-height: 200%;
-background: linear-gradient(
-120deg,
-rgba(255, 255, 255, 0) 30%,
-rgba(255, 255, 255, 0.4) 50%,
-rgba(255, 255, 255, 0) 70%
-);
-animation: diagonalShine 2s infinite;
-z-index: 0;
-transform: rotateZ(0deg);
+.download-btn {
+  display: block;
+  width: 100%;
+  background: #0f9d58;
+  color: white;
+  padding: 16px;
+  border-radius: 12px; /* 👈 Curved corners */
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-sizing: border-box;
 }
 
 .download-btn span {
-position: relative;
-z-index: 2;
+  position: relative;
+  z-index: 2;
+}
+
+.download-btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  animation: diagonalShine 2s infinite;
+  z-index: 0;
+  transform: rotateZ(25deg);
 }
 
 @keyframes diagonalShine {
-0% {
-transform: translateX(-100%) rotateZ(25deg);
-}
-100% {
-transform: translateX(100%) rotateZ(25deg);
-}
+  0% {
+    transform: translateX(-100%) rotateZ(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotateZ(25deg);
+  }
 }
 .about-app {
 margin-top: 30px;
