@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- SEO Meta Tags -->
   <title>DD Game - Play Fun Games & Win Rewards | Official Download 2024</title>
   <meta name="description" content="Play DD Game and enjoy exciting gameplay with amazing rewards. Download now for free and join millions of players worldwide.">
   <meta name="keywords" content="dd game, dd game download, dd game app, play dd game, mobile games, win rewards, free games, gaming app">
-  
-  <!-- Favicon - ddgame.jpg as icon -->
-  <link rel="icon" type="image/x-icon" href="ddgame.jpg">
+  <meta name="author" content="DD Game Official">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -37,7 +36,7 @@
       padding: 0 20px;
     }
     
-    /* Header with DD Game Icon */
+    /* Header */
     .main-header {
       background: rgba(26, 26, 46, 0.95);
       backdrop-filter: blur(10px);
@@ -61,23 +60,20 @@
       gap: 15px;
     }
     
-    /* DD Game Icon यहाँ है - ddgame.jpg image */
     .app-icon {
       width: 60px;
       height: 60px;
+      background: linear-gradient(135deg, #ff6b6b, #ffa726);
       border-radius: 15px;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 24px;
+      font-weight: 900;
       box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
       overflow: hidden;
+      color: white;
       border: 2px solid #ffa726;
-    }
-    
-    .app-icon img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
     
     .logo-text {
@@ -137,7 +133,7 @@
       opacity: 0.9;
     }
     
-    /* App Preview Image */
+    /* App Preview */
     .app-preview {
       width: 250px;
       height: 250px;
@@ -146,12 +142,13 @@
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       border: 5px solid white;
-    }
-    
-    .app-preview img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      background: linear-gradient(135deg, #ff6b6b, #ffa726);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
     }
     
     /* Bonus Container */
@@ -294,102 +291,42 @@
       color: #ffa726;
     }
     
-    /* How to Play */
-    .steps-section {
-      margin: 50px 0;
-    }
-    
-    .steps-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 30px;
-    }
-    
-    .step-card {
-      flex: 1;
-      min-width: 250px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
-      padding: 30px 20px;
-      text-align: center;
-      position: relative;
-    }
-    
-    .step-number {
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 40px;
-      height: 40px;
-      background: #ff6b6b;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 20px;
-    }
-    
-    /* Screenshots */
+    /* Screenshots Gallery */
     .screenshots-section {
-      margin: 50px 0;
+      padding: 60px 0;
     }
     
-    .screenshots-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .gallery {
+      display: flex;
+      justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
       margin-top: 30px;
     }
     
-    .screenshot {
+    .gallery-item {
+      width: 200px;
+      height: 350px;
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s ease;
       border: 3px solid transparent;
+      transition: all 0.3s ease;
     }
     
-    .screenshot:hover {
+    .gallery-item:hover {
       transform: scale(1.05);
       border-color: #ffa726;
     }
     
-    .screenshot img {
+    .gallery-item img {
       width: 100%;
-      height: 350px;
+      height: 100%;
       object-fit: cover;
       display: block;
     }
     
-    /* Testimonials */
-    .testimonials-section {
-      margin: 50px 0;
-    }
-    
-    .testimonial-card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
-      padding: 25px;
-      margin: 20px 0;
-      border-left: 5px solid #ff6b6b;
-    }
-    
-    .testimonial-text {
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-    
-    .testimonial-author {
-      color: #ffa726;
-      font-weight: 600;
-    }
-    
-    /* FAQ */
+    /* FAQ Section */
     .faq-section {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 20px;
@@ -411,10 +348,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 10px 0;
     }
     
     .faq-answer {
-      margin-top: 10px;
+      color: #ccc;
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 10px 0;
       display: none;
     }
     
@@ -435,38 +376,108 @@
     /* Footer */
     footer {
       background: rgba(26, 26, 46, 0.95);
-      padding: 40px 0 20px;
+      padding: 50px 0 30px;
       border-top: 3px solid #ff6b6b;
       margin-top: 50px;
     }
     
     .footer-content {
       text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-logo .app-icon {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .footer-logo .logo-text {
+      font-size: 32px;
     }
     
     .footer-links {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
-      margin: 20px 0;
+      gap: 25px;
+      margin: 25px 0;
     }
     
     .footer-links a {
       color: #ffa726;
       text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
     }
     
     .footer-links a:hover {
+      color: white;
       text-decoration: underline;
     }
     
-    .disclaimer {
+    /* DISCLAIMER - यह अब सही से दिखेगा */
+    .disclaimer-box {
       background: rgba(255, 0, 0, 0.1);
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 30px;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 30px 0;
       border-left: 5px solid #ff0000;
+      text-align: left;
+    }
+    
+    .disclaimer-box h3 {
+      color: #ff6666;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+    
+    .disclaimer-box p {
+      color: #ff9999;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    
+    .disclaimer-box .hindi-text {
+      font-size: 15px;
+      color: #ffaaaa;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 0, 0, 0.2);
+    }
+    
+    /* COPYRIGHT - यह अब सही से दिखेगा */
+    .copyright {
+      text-align: center;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #aaa;
+      font-size: 14px;
+    }
+    
+    .copyright p {
+      margin-bottom: 5px;
+    }
+    
+    .copyright-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .copyright-links a {
+      color: #ffa726;
+      text-decoration: none;
+      font-size: 14px;
     }
     
     /* Responsive */
@@ -489,12 +500,22 @@
         gap: 15px;
       }
       
-      .features-grid, .screenshots-grid {
+      .features-grid {
         grid-template-columns: 1fr;
       }
       
-      .steps-container {
+      .gallery-item {
+        width: 160px;
+        height: 280px;
+      }
+      
+      .footer-links {
         flex-direction: column;
+        gap: 15px;
+      }
+      
+      .disclaimer-box {
+        padding: 20px;
       }
     }
     
@@ -507,21 +528,29 @@
         padding: 20px;
       }
       
+      .section-title {
+        font-size: 28px;
+      }
+      
       .features-section, .faq-section {
         padding: 25px 15px;
+      }
+      
+      .gallery-item {
+        width: 140px;
+        height: 250px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Header with DD Game Icon -->
+  <!-- Header -->
   <header class="main-header">
     <div class="container">
       <div class="header-content">
         <div class="logo-container">
           <div class="app-icon">
-            <!-- DD Game Icon Image -->
-            <img src="ddgame.jpg" alt="DD Game Icon">
+            <i class="fas fa-gamepad"></i>
           </div>
           <div class="logo-text">DD GAME</div>
         </div>
@@ -542,15 +571,19 @@
         </h1>
         <p class="hero-subtitle">India's Most Popular Gaming App | Instant Withdrawal | 24/7 Support</p>
         
-        <!-- App Preview Image -->
+        <!-- App Preview -->
         <div class="app-preview">
-          <img src="ddgame.jpg" alt="DD Game App Preview">
+          <i class="fas fa-gamepad" style="font-size: 60px;"></i>
+          <div style="margin-left: 15px;">
+            <div style="font-size: 32px;">DD GAME</div>
+            <div style="font-size: 18px; margin-top: 10px;">Click Download</div>
+          </div>
         </div>
         
         <div class="bonus-container">
           <div class="bonus-title">LIMITED TIME OFFER</div>
           <div class="bonus-amount">₹500 BONUS</div>
-          <div class="bonus-code">WELCOME BONUS FOR NEW USERS</div>
+          <div style="color: #1a1a2e; font-weight: 600;">WELCOME BONUS FOR NEW USERS</div>
         </div>
         
         <div class="stats-section">
@@ -623,79 +656,25 @@
     </div>
   </section>
 
-  <!-- How to Play -->
-  <section class="steps-section">
-    <div class="container">
-      <h2 class="section-title">HOW TO START WINNING</h2>
-      <div class="steps-container">
-        <div class="step-card">
-          <div class="step-number">1</div>
-          <h3 style="color: #ffa726; margin-bottom: 15px;">DOWNLOAD APP</h3>
-          <p>Click the download button above to install DD Game on your phone.</p>
-        </div>
-        
-        <div class="step-card">
-          <div class="step-number">2</div>
-          <h3 style="color: #ffa726; margin-bottom: 15px;">REGISTER & GET BONUS</h3>
-          <p>Sign up with mobile number and claim your ₹500 welcome bonus instantly.</p>
-        </div>
-        
-        <div class="step-card">
-          <div class="step-number">3</div>
-          <h3 style="color: #ffa726; margin-bottom: 15px;">PLAY & WIN</h3>
-          <p>Choose your favorite game, play and start winning exciting rewards!</p>
-        </div>
-        
-        <div class="step-card">
-          <div class="step-number">4</div>
-          <h3 style="color: #ffa726; margin-bottom: 15px;">WITHDRAW EARNINGS</h3>
-          <p>Withdraw your winnings instantly to UPI or Bank Account. Min. ₹100 withdrawal.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Screenshots -->
+  <!-- Screenshots Section -->
   <section class="screenshots-section">
     <div class="container">
       <h2 class="section-title">GAME SCREENSHOTS</h2>
-      <div class="screenshots-grid">
-        <div class="screenshot">
-          <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DD Game Screenshot 1" loading="lazy">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DD Game Screenshot 1" loading="lazy">
         </div>
-        <div class="screenshot">
-          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DD Game Screenshot 2" loading="lazy">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DD Game Screenshot 2" loading="lazy">
         </div>
-        <div class="screenshot">
-          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DD Game Screenshot 3" loading="lazy">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DD Game Screenshot 3" loading="lazy">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials-section">
-    <div class="container">
-      <h2 class="section-title">WHAT PLAYERS SAY</h2>
-      
-      <div class="testimonial-card">
-        <p class="testimonial-text">"I won ₹15,000 in my first week! DD Game is amazing. Withdrawal came in 10 minutes. Best gaming app ever!"</p>
-        <div class="testimonial-author">- Rohan S., Mumbai</div>
-      </div>
-      
-      <div class="testimonial-card">
-        <p class="testimonial-text">"Daily bonuses keep me coming back. I earn ₹200-500 daily just playing 30 minutes. Highly recommended!"</p>
-        <div class="testimonial-author">- Priya M., Delhi</div>
-      </div>
-      
-      <div class="testimonial-card">
-        <p class="testimonial-text">"Customer support is excellent. Had an issue with withdrawal and they solved it in 5 minutes. Trustworthy platform."</p>
-        <div class="testimonial-author">- Vikram P., Bangalore</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
+  <!-- FAQ Section -->
   <section class="faq-section">
     <div class="container">
       <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
@@ -716,7 +695,7 @@
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="faq-answer">
-          <p>After downloading and registering, go to "Promotions" section to claim your welcome bonus instantly.</p>
+          <p>After downloading and registering, go to "Promotions" section to claim your welcome bonus instantly. The bonus is automatically credited to new users.</p>
         </div>
       </div>
       
@@ -726,15 +705,200 @@
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="faq-answer">
-          <p>Minimum withdrawal is ₹100. You can withdraw via UPI, Bank Transfer, or Paytm. Withdrawals are processed within 5-10 minutes.</p>
+          <p>Minimum withdrawal is ₹100. You can withdraw via UPI, Bank Transfer, or Paytm. Withdrawals are processed within 5-10 minutes during working hours.</p>
         </div>
       </div>
       
       <div class="faq-item">
         <div class="faq-question">
-          <span>Is there customer support?</span>
+          <span>Is there customer support available?</span>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="faq-answer">
-          <p>Yes, 24/7 customer support via live chat, email, and WhatsApp. Average response time is under 2 minutes.</p>
-       
+          <p>Yes, 24/7 customer support via live chat, email, and WhatsApp. Average response time is under 2 minutes for urgent queries.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can I play on both Android and iPhone?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, DD Game is available for both Android (5.0+) and iOS (10.0+). The download link works for both platforms automatically.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is my personal information safe?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we use 256-bit SSL encryption to protect all user data. We never share your personal information with third parties.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 style="font-size: 36px; margin-bottom: 20px; color: #ffa726;">READY TO WIN EXCITING REWARDS?</h2>
+      <p style="font-size: 20px; margin-bottom: 30px; opacity: 0.9;">Download DD Game now and claim your welcome bonus!</p>
+      <a href="https://app.adjust.com/1ivn71t0?label=KFPEI&redirect=https%3A%2F%2Fdown.dd7778.com%2F" class="download-btn" target="_blank">
+        <i class="fas fa-download btn-icon"></i>
+        DOWNLOAD NOW - GET ₹500 FREE
+      </a>
+      <p style="margin-top: 15px; opacity: 0.8;">100% Free • No Hidden Charges • Instant Registration</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="app-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="logo-text">DD GAME</div>
+        </div>
+        
+        <p style="font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto 25px;">
+          Your ultimate destination for fun gaming and exciting rewards. Play responsibly and enjoy!
+        </p>
+        
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#terms">Terms</a>
+          <a href="#privacy">Privacy</a>
+        </div>
+        
+        <!-- DISCLAIMER BOX - अब सही से दिखेगा -->
+        <div class="disclaimer-box">
+          <h3>⚠️ IMPORTANT DISCLAIMER</h3>
+          <p>This platform is for entertainment purposes only. Users must be 18 years or older to participate. Play responsibly and within your means.</p>
+          <p>DD Game does not guarantee winnings and is not responsible for any financial losses. The outcomes are based on skill and chance.</p>
+          <p>If you feel you may have a gaming problem, please seek help from professional organizations.</p>
+          
+          <div class="hindi-text">
+            <p><strong>सावधानी:</strong> यह प्लेटफॉर्म केवल मनोरंजन के उद्देश्य से है। भाग लेने वाले उपयोगकर्ताओं की आयु 18 वर्ष या उससे अधिक होनी चाहिए। जिम्मेदारी से और अपने साधनों के भीतर खेलें।</p>
+            <p>DD Game जीत की गारंटी नहीं देता है और किसी भी वित्तीय नुकसान के लिए जिम्मेदार नहीं है। परिणाम कौशल और संयोग पर आधारित हैं।</p>
+          </div>
+        </div>
+        
+        <!-- COPYRIGHT SECTION - अब सही से दिखेगा -->
+        <div class="copyright">
+          <p>© 2024 DD Game Entertainment. All Rights Reserved.</p>
+          <p style="margin-top: 8px; font-size: 13px; color: #888;">
+            This is an independent gaming platform not affiliated with any other company.
+          </p>
+          
+          <div class="copyright-links">
+            <a href="#terms">Terms of Service</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#responsible">Responsible Gaming</a>
+            <a href="#contact">Contact Support</a>
+          </div>
+          
+          <p style="margin-top: 20px; font-size: 12px; color: #777;">
+            DD Game is a registered trademark. All game content is protected by copyright laws.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Toggle Functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('i');
+        
+        // Toggle current answer
+        answer.classList.toggle('active');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+        
+        // Close other answers
+        document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+          if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+            otherAnswer.classList.remove('active');
+            const otherIcon = otherAnswer.previousElementSibling.querySelector('i');
+            otherIcon.classList.remove('fa-chevron-up');
+            otherIcon.classList.add('fa-chevron-down');
+          }
+        });
+      });
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Auto-hide header on scroll down
+    let lastScrollTop = 0;
+    const header = document.querySelector('.main-header');
+    
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scroll down
+        header.style.transform = 'translateY(-100%)';
+        header.style.transition = 'transform 0.3s ease';
+      } else {
+        // Scroll up
+        header.style.transform = 'translateY(0)';
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+    
+    // Download button tracking
+    document.querySelectorAll('.download-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        console.log('Download button clicked - Redirecting to DD Game');
+        // You can add analytics here
+      });
+    });
+    
+    // Page load animation
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+      
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+    
+    // Open all external links in new tab
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+      if (!link.getAttribute('target')) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  </script>
+</body>
+</html>
