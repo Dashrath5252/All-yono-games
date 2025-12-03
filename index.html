@@ -152,10 +152,56 @@
             padding: 20px;
         }
         
-        .screen-icon {
-            font-size: 60px;
-            margin-bottom: 20px;
-            color: #ffd166;
+        /* Floating App Icon Section - यहाँ बदलाव किया है */
+        .floating-app-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .floating-icon-container {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ff9e00, #ffd166);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 5px solid #ffd166;
+            box-shadow: 0 10px 30px rgba(255, 158, 0, 0.3);
+        }
+        
+        .floating-icon-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Floating Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+                box-shadow: 0 10px 20px rgba(255, 158, 0, 0.3);
+            }
+            50% {
+                transform: translateY(-15px);
+                box-shadow: 0 20px 40px rgba(255, 158, 0, 0.4);
+            }
+            100% {
+                transform: translateY(0px);
+                box-shadow: 0 10px 20px rgba(255, 158, 0, 0.3);
+            }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .floating-icon-container {
+            animation: float 3s ease-in-out infinite;
         }
         
         .game-stats {
@@ -449,6 +495,11 @@
                 height: 500px;
             }
             
+            .floating-app-icon {
+                width: 100px;
+                height: 100px;
+            }
+            
             .features-grid {
                 grid-template-columns: 1fr;
             }
@@ -487,17 +538,11 @@
                 gap: 15px;
                 text-align: center;
             }
-        }
-        
-        /* Animations */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        .floating {
-            animation: float 3s ease-in-out infinite;
+            
+            .floating-app-icon {
+                width: 90px;
+                height: 90px;
+            }
         }
     </style>
 </head>
@@ -526,16 +571,10 @@
                 <h1 class="hero-title">Experience Amazing Mobile Games</h1>
                 <p class="hero-subtitle">Join millions of players enjoying D1 Game's collection of fun and exciting games. Pure entertainment, anytime, anywhere.</p>
                 
-                <div class="app-showcase">
-                    <div class="app-screen floating">
-                        <div class="screen-content">
-                            <div class="screen-icon">
-                                <i class="fas fa-gamepad"></i>
-                            </div>
-                            <h3 style="font-size: 28px; margin-bottom: 10px;">D1 GAME</h3>
-                            <p>Play & Enjoy</p>
-                            <p style="margin-top: 20px; font-size: 14px;">Entertainment Platform</p>
-                        </div>
+                <!-- Floating App Icon - यहाँ बदलाव किया है -->
+                <div class="floating-app-icon">
+                    <div class="floating-icon-container">
+                        <img src="d1game.jpg" alt="D1 Game Icon" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-gamepad\'></i>';">
                     </div>
                 </div>
                 
